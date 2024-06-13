@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script type="text/javascript">
-        // 安全跳转函数
-        function safeReplace(url) {
-            // 检查 URL 是否是可信的
-            if (url.startsWith('https://www.jeejia.cn/links/5E78BC97')) {
-                window.location.replace(url);
-            } else {
-                console.error('Untrusted URL');
+        window.onload = function() {
+            // 安全跳转函数
+            function safeReplace(url) {
+                // 检查 URL 是否是可信的
+                if (url.startsWith('https://www.jeejia.cn/links/5E78BC97')) {
+                    window.location.replace(url);
+                } else {
+                    console.error('Untrusted URL');
+                }
             }
-        }
 
-        // 调用跳转函数
-        safeReplace('https://www.example.com'); // 替换为你想要跳转的URL
+            // 调用跳转函数
+            safeReplace('https://www.jeejia.cn/links/5E78BC97'); // 替换为你想要跳转的URL
+        };
     </script>
 </head>
 <body>
